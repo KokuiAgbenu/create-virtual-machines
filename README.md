@@ -64,7 +64,7 @@ Use Windows Remote Desktop Connection to connect to VM1 using its public IP addr
 </p>
 
 <p>
-When connected to VM1, download Wireshark to use as a packet analyser to observe the pings between VM1 and VM2.
+When connected to VM1, download Wireshark which is a packet analyser that will be used to observe the pings between VM1 and VM2.
 </p>
 <br />
 
@@ -73,7 +73,7 @@ When connected to VM1, download Wireshark to use as a packet analyser to observe
 ![image](https://github.com/user-attachments/assets/8c099887-21e5-4643-a7bf-c45227cd3fdd)
 
 <p>
-With Wireshark open (within VM1), filter the traffic by ICMP protocol and ping the private IP address of VM2 using Windows Powershell.
+With Wireshark open (within VM1), filter the traffic by ICMP protocol and ping the private IP address of VM2 using Windows Powershell. The private IP of VM2 can be found 
 </p>
   
 </p>
