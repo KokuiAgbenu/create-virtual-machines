@@ -42,7 +42,7 @@ In this tutorial, we create two Azure virtual machines and observe the succesful
 
 </p>
 <p>
-After creating the resource group, the first virtual machine, virtual network, and subnet (walkthrough found in the tutorial video above) create the second virtual machine and put it in the same virtual network as virtual machine one. 
+After creating the resource group, the first virtual machine, virtual network, and subnet (walkthrough found in the tutorial video above) create the second virtual machine and put it in the same virtual network as virtual machine one. The highlighted virtual network above is the same as the one created during the creation of virtual machine 1 (VM1)
 </p>
 <br />
 
@@ -59,14 +59,33 @@ Use Windows Remote Desktop Connection to connect to VM1 using its public IP addr
 
 <p>
 
-![image](https://github.com/user-attachments/assets/ade7e0e0-92ca-41a8-9fb1-38c27dc11af8)
+![image](https://github.com/user-attachments/assets/3fa84707-2b6b-4c15-b39a-fd3af0c6dfd4)
 
-
-
-
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+When connected to VM1, download Wireshark to use as a packet analyser to observe the pings between VM1 and VM2.
+</p>
+<br />
+
+<p>
+
+![image](https://github.com/user-attachments/assets/8c099887-21e5-4643-a7bf-c45227cd3fdd)
+
+<p>
+With Wireshark open, filter the traffic by ICMP protocol and ping the private IP address of VM2 using Windows Powershell.
+</p>
+  
+</p>
+<br />
+
+<p>
+![image](https://github.com/user-attachments/assets/ecea0696-6431-41fa-9728-31c558aa5c3b)
+
+
+<p>
+Observe the succesful pings between VM1 and VM2.
+</p>
+ 
 </p>
 <br />
