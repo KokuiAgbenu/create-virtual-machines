@@ -17,7 +17,7 @@ In this tutorial, we create two Azure virtual machines and observe the succesful
 - Microsoft Azure (Virtual Machines)
 - Remote Desktop
 - Windows Powershell
-- Network Protocol  ICMP
+- Network Protocol ICMP
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -42,7 +42,7 @@ In this tutorial, we create two Azure virtual machines and observe the succesful
 
 </p>
 <p>
-After creating the resource group, the first virtual machine, virtual network, and subnet (walkthrough found in the tutorial video above) create the second virtual machine and put it in the same virtual network as virtual machine one. The highlighted virtual network above is the same as the one created during the creation of virtual machine 1 (VM1)
+After creating the resource group, the first virtual machine, virtual network, and subnet (walkthrough found in the tutorial video above) create the second virtual machine and put it in the same virtual network as virtual machine one. The highlighted virtual network above is the same as the one created during the creation of virtual machine 1 (VM1).
 </p>
 <br />
 
@@ -73,18 +73,17 @@ When connected to VM1, download Wireshark to use as a packet analyser to observe
 ![image](https://github.com/user-attachments/assets/8c099887-21e5-4643-a7bf-c45227cd3fdd)
 
 <p>
-With Wireshark open, filter the traffic by ICMP protocol and ping the private IP address of VM2 using Windows Powershell.
+With Wireshark open (within VM1), filter the traffic by ICMP protocol and ping the private IP address of VM2 using Windows Powershell.
 </p>
   
 </p>
 <br />
 
 <p>
-![image](https://github.com/user-attachments/assets/ecea0696-6431-41fa-9728-31c558aa5c3b)
-
+<img src="https://i.imgur.com/w8eNhQJ.png" height="80%" width="80%" alt="Wireshark filtered by ICMP traffic"/>
 
 <p>
-Observe the succesful pings between VM1 and VM2.
+Observe the succesful pings between VM1 and VM2 using VM2's private IP address, confirming that the two VMs are on the same network.
 </p>
  
 </p>
